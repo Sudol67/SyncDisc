@@ -105,10 +105,9 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.label1.Location = new System.Drawing.Point(139, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(603, 64);
+            this.label1.Size = new System.Drawing.Size(558, 64);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Synchronizacja wybranej lokalizacji do innego miejsca \r\nna wybranym nośniku danyc" +
-    "h ";
+            this.label1.Text = "Synchronize selected location to another location \r\non selected media storage\r\n";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // imageList1
@@ -135,21 +134,21 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(808, 110);
+            this.label2.Location = new System.Drawing.Point(860, 109);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(197, 23);
+            this.label2.Size = new System.Drawing.Size(97, 23);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Docelowy nośnik danych";
+            this.label2.Text = "Target path";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(160, 110);
+            this.label3.Location = new System.Drawing.Point(195, 109);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 23);
+            this.label3.Size = new System.Drawing.Size(102, 23);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Źródło danych";
+            this.label3.Text = "Source path";
             // 
             // panel1
             // 
@@ -192,7 +191,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(239, 31);
             this.button6.TabIndex = 12;
-            this.button6.Text = "Wybór ścieżki";
+            this.button6.Text = "Choose path";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -206,7 +205,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(239, 31);
             this.button7.TabIndex = 13;
-            this.button7.Text = "Wyczyść";
+            this.button7.Text = "Clear";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -220,7 +219,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(239, 31);
             this.button8.TabIndex = 15;
-            this.button8.Text = "Wyczyść";
+            this.button8.Text = "Clear";
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
@@ -234,7 +233,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(239, 31);
             this.button9.TabIndex = 14;
-            this.button9.Text = "Wybór ścieżki";
+            this.button9.Text = "Choose path";
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
@@ -253,11 +252,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(399, 263);
+            this.label4.Location = new System.Drawing.Point(424, 262);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(325, 25);
+            this.label4.Size = new System.Drawing.Size(274, 25);
             this.label4.TabIndex = 17;
-            this.label4.Text = "Znalezione różnice do synchronizacji";
+            this.label4.Text = "Files ready for synchronization";
             // 
             // button10
             // 
@@ -270,7 +269,7 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(180, 42);
             this.button10.TabIndex = 18;
-            this.button10.Text = "Synchronizacja";
+            this.button10.Text = "Synchronization";
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 

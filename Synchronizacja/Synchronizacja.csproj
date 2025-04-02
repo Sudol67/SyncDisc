@@ -48,7 +48,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Zrzut-ekranu-2025-04-02-123801.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -121,7 +122,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\right-arrow-37.png" />
-    <Content Include="Zrzut-ekranu-2025-04-02-123801.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

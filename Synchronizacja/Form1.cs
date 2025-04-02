@@ -39,7 +39,7 @@ namespace Synchronizacja
         private void button3_Click(object sender, EventArgs e)
         {
             //Przycisk wyłączania
-            DialogResult dialogResult = MessageBox.Show("Czy na pewno chcesz zakończyć działanie programu?", "Komunikat", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to close program?", "Closing", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 this.Close();
@@ -49,7 +49,7 @@ namespace Synchronizacja
         private void button4_Click(object sender, EventArgs e)
         {
             //Ustawienia
-            MessageBox.Show("Ustawienia nie są jeszcze dostępne", "Komunikat");
+            MessageBox.Show("Settings are not yet avaible", "Settings");
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -63,7 +63,7 @@ namespace Synchronizacja
             //Wczytywanie źródła
             using (FolderBrowserDialog folderBrowser = new FolderBrowserDialog())
             {
-                folderBrowser.Description = "Wybierz folder źródłowy";
+                folderBrowser.Description = "Choose source path";
 
                 if (folderBrowser.ShowDialog() == DialogResult.OK)
                 {
@@ -84,7 +84,7 @@ namespace Synchronizacja
             //Wczytywanie docelowego
             using (FolderBrowserDialog folderBrowser = new FolderBrowserDialog())
             {
-                folderBrowser.Description = "Wybierz folder docelowy";
+                folderBrowser.Description = "Choose target path";
 
                 if (folderBrowser.ShowDialog() == DialogResult.OK)
                 {
@@ -122,7 +122,7 @@ namespace Synchronizacja
                     if (!File.Exists(destFilePath))
                     {
                         string fileName = Path.GetFileName(file);
-                        listView1.Items.Add(new ListViewItem(new[] { "Plik", fileName, "Brak", file }));
+                        listView1.Items.Add(new ListViewItem(new[] { "File", fileName, "None", file }));
                     }
                     else
                     {
@@ -132,7 +132,7 @@ namespace Synchronizacja
                         if (sourceFileInfo.LastWriteTime > destFileInfo.LastWriteTime)
                         {
                             string fileName = Path.GetFileName(file);
-                            listView1.Items.Add(new ListViewItem(new[] { "Plik", fileName, "Nowsza wersja", file  }));
+                            listView1.Items.Add(new ListViewItem(new[] { "File", fileName, "Newer version", file  }));
                         }
                     }
                 }
@@ -144,7 +144,7 @@ namespace Synchronizacja
                     if (!Directory.Exists(destDirPath))
                     {
                         string folderName = Path.GetFileName(dir);
-                        listView1.Items.Add(new ListViewItem(new[] { "Folder", folderName, "Brak", dir  }));
+                        listView1.Items.Add(new ListViewItem(new[] { "Folder", folderName, "None", dir  }));
                     }
                 }
                 if (listView1.Items.Count > 0)
@@ -154,22 +154,22 @@ namespace Synchronizacja
                 }
                 else
                 {
-                    MessageBox.Show("Brak plików do synchronizacji");
+                    MessageBox.Show("No file for synchronization");
                 }
                 listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
             }
             else
             {
-                MessageBox.Show("Podane ścieżki nie są prawidłowe");
+                MessageBox.Show("The path are incorrect");
             }
         }
         private void InitializeListView()
         {
             listView1.View = View.Details;
-            listView1.Columns.Add("Rodzaj", 100, HorizontalAlignment.Left);
-            listView1.Columns.Add("Nazwa", 200, HorizontalAlignment.Left);
+            listView1.Columns.Add("Type", 100, HorizontalAlignment.Left);
+            listView1.Columns.Add("Name", 200, HorizontalAlignment.Left);
             listView1.Columns.Add("Status", 100, HorizontalAlignment.Left);
-            listView1.Columns.Add("Ścieżka", 400, HorizontalAlignment.Left);
+            listView1.Columns.Add("Path", 400, HorizontalAlignment.Left);
         }
 
         private async void button10_Click(object sender, EventArgs e)
@@ -247,7 +247,7 @@ namespace Synchronizacja
                     {
                         Directory.CreateDirectory(destPath);
                     }
-                    else if (itemType == "Plik")
+                    else if (itemType == "File")
                     {
                         string destDirectory = Path.GetDirectoryName(destPath);
                         if (!Directory.Exists(destDirectory))
@@ -255,7 +255,7 @@ namespace Synchronizacja
                             Directory.CreateDirectory(destDirectory);
                         }
 
-                        if (item.SubItems[2].Text == "Brak" || item.SubItems[2].Text == "Nowsza wersja")
+                        if (item.SubItems[2].Text == "None" || item.SubItems[2].Text == "Newer version")
                         {
                             File.Copy(itemPath, destPath, true);
                         }
@@ -282,9 +282,9 @@ namespace Synchronizacja
                 ListViewItem itemX = (ListViewItem)x;
                 ListViewItem itemY = (ListViewItem)y;
 
-                if (itemX.SubItems[col].Text == "Folder" && itemY.SubItems[col].Text == "Plik")
+                if (itemX.SubItems[col].Text == "Folder" && itemY.SubItems[col].Text == "File")
                     return -1;
-                if (itemX.SubItems[col].Text == "Plik" && itemY.SubItems[col].Text == "Folder")
+                if (itemX.SubItems[col].Text == "File" && itemY.SubItems[col].Text == "Folder")
                     return 1;
 
                 return string.Compare(itemX.SubItems[col].Text, itemY.SubItems[col].Text);
