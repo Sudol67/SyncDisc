@@ -1,4 +1,4 @@
-# Synchronization application
+# Synchronization app
 
 ![Logo of an app. It is a dark blue rectangle with white text 'SyncDisc' on the bottom. The text is in Century Schoolbook font with bold formatting.](/Synchronizacja/Resources/Logo.png)
 
@@ -29,10 +29,11 @@ This tool isn't meant to be revolutionary — just practical and efficient for m
 
 ---
 
-Future plans for improving the app:
+### Future plans for improving the app:
+
 - A better-looking GUI
 - Polish language support
 - Option to move replaced files (when syncing newer versions) to a separate archive folder
 - Displaying file sizes in the list (optional, just an extra feature)
 
-I’m open to suggestions for improving the app or fixing any bugs — feel free to reach out!
+## I’m open to suggestions for improving the app or fixing any bugs — feel free to reach out!
