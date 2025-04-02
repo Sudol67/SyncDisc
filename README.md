@@ -11,8 +11,8 @@ This tool isn't meant to be revolutionary — just practical and efficient for m
 - Compares last modified dates to identify updated files that need syncing
 - It uses multithreading — helpful when syncing takes a while or when something slows things down.
 
-[!IMPORTANT]
-The program will not detect changes in names of files or folders. If you change name, app will conisder it as a new element. It will cause duplication of this file or folder but with new name in the destination path
+> [!IMPORTANT]
+> The program will not detect changes in names of files or folders. If you change name, app will conisder it as a new element. It will cause duplication of this file or folder but with new name in the destination path
 
 ### How to use:
 1. Run the .exe file.
