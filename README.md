@@ -11,10 +11,13 @@ This tool isn't meant to be revolutionary — just practical and efficient for m
 - Compares last modified dates to identify updated files that need syncing
 - It uses multithreading — helpful when syncing takes a while or when something slows things down.
 
+---
+
 > [!IMPORTANT]
 > The program will not detect changes in names of files or folders. If you change name, app will conisder it as a new element. It will cause duplication of this file or folder but with new name in the destination path
 
 ### How to use:
+
 1. Run the .exe file.
 2. Enter the source path using the white box in the upper left corner of the window. You can type it manually or use the "Choose Path" button to select a folder.
 3. Enter the target path the same way — the target path box is located to the right of the source path box.
@@ -23,6 +26,8 @@ This tool isn't meant to be revolutionary — just practical and efficient for m
 6. If something gets stuck or the sync takes too long, click the "STOP" button to abort the process. Already copied files will not be deleted.
 
 ![Screenshot of the graphical interface of the app. On the top of the window, there is a logo and a short title describing the app. Below the desciption, there are two white boxes for source and target paths. Main colors are white and blue with eye-catching blue, green and red buttons on the bottom. In the middle there is a white box used for listing files ready for synchronization.](/Synchronizacja/Resources/Main.png)
+
+---
 
 Future plans for improving the app:
 - A better-looking GUI
