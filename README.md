@@ -1,5 +1,7 @@
 # Synchronization application
 
+![Logo of an app. It is a dark blue rectangle with white text 'SyncDisc' on the bottom. The text is in Century Schoolbook font with bold formatting](/Synchronizacja/Resources/Logo.png)
+
 Created purely for my personal use. This project was developed after I bought an external SSD and needed a tool to sync files from my computer to the SSD as a backup. I didn’t want to use a third-party software due to privacy concerns and saw an opportunity to create something on my own.
 
 This tool isn't meant to be revolutionary — just practical and efficient for my needs:
