@@ -38,7 +38,7 @@ namespace Synchronizacja
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //Przycisk wyłączania
+            //Turn off
             DialogResult dialogResult = MessageBox.Show("Are you sure you want to close program?", "Closing", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
@@ -48,19 +48,19 @@ namespace Synchronizacja
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //Ustawienia
+            //Settings
             MessageBox.Show("Settings are not yet avaible", "Settings");
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            //Pomoc
+            //Help
         }
         //---------- Wczytywanie ścieżek ---------------------------------------
 
         private void button6_Click(object sender, EventArgs e)
         {
-            //Wczytywanie źródła
+            //Source
             using (FolderBrowserDialog folderBrowser = new FolderBrowserDialog())
             {
                 folderBrowser.Description = "Choose source path";
@@ -75,13 +75,13 @@ namespace Synchronizacja
 
         private void button7_Click(object sender, EventArgs e)
         {
-            //Czyaszczenie źródła
+            //Clean source
             richTextBox1.Text = "";
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            //Wczytywanie docelowego
+            //Target
             using (FolderBrowserDialog folderBrowser = new FolderBrowserDialog())
             {
                 folderBrowser.Description = "Choose target path";
@@ -96,7 +96,7 @@ namespace Synchronizacja
 
         private void button8_Click(object sender, EventArgs e)
         {
-            //Czyszczenie docelowego
+            //Clean target
             richTextBox2.Text = "";
         }
 
@@ -174,7 +174,7 @@ namespace Synchronizacja
 
         private async void button10_Click(object sender, EventArgs e)
         {
-            // Rozpocznij synchronizację
+            //Sync
             if (Directory.Exists(FolderSourcePath) && Directory.Exists(FolderTargetPath))
             {
                 cancellationTokenSource = new CancellationTokenSource();
