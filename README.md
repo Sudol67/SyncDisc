@@ -16,7 +16,7 @@ Yes, I created a name and logo for a small app for my personal use. It's because
 ---
 
 > [!IMPORTANT]
-> The program will not detect changes in names of files or folders. If you change name, app will conisder it as a new element. It will cause duplication of this file or folder but with new name in the destination path
+> The program will not detect changes in names of files or folders. If you change the name, app will conisder it as a new element. It will cause duplication of this file or folder but with new name in the destination path.
 
 ### How to use:
 
