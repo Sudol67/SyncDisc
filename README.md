@@ -11,6 +11,8 @@ This tool isn't meant to be revolutionary — just practical and efficient for m
 - Compares last modified dates to identify updated files that need syncing
 - It uses multithreading — helpful when syncing takes a while or when something slows things down.
 
+Yes, I created a name and logo for a small app for my personal use. It's because I like to do my tasks and projects as well as I can.
+
 ---
 
 > [!IMPORTANT]
